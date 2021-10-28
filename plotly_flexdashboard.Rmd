@@ -17,7 +17,7 @@ library(plotly)
 ```
 
 
-NYC Airbnb data
+# NYC Airbnb data
 
 
 * The mutate line is saying that a 10 rating should be 5 stars
@@ -41,7 +41,7 @@ nyc_airbnb =
 ```
 
 
-Plotly scatterplot:
+## Plotly scatterplot:
 
 * The \ puts this on a new line
 
@@ -53,7 +53,7 @@ nyc_airbnb %>%
     color = ~price, text = ~text_label, alpha = 0.5)
 ```
 
-Plotly boxplot:
+## Plotly boxplot:
 
 * Mutate to put things in order with factor reorder, neighborhood in order of price
 
@@ -61,6 +61,31 @@ Plotly boxplot:
 nyc_airbnb %>% 
   mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
   plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+```
+
+## Plotly bar chart:
+
+* How many rentals are in each neighborhood?
+* Factor reorder in order according to n
+
+```{r}
+nyc_airbnb %>% 
+  count(neighbourhood) %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
+  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
+```
+
+
+## ggplotly
+
+```{r}
+gg_lat_long = 
+  nyc_airbnb %>%
+  ggplot(aes(x = lat, y = long, color = price)) +
+  geom_point(alpha = 0.25) +
+  coord_cartesian()
+
+ggplotly(gg_lat_long)
 ```
 
 
