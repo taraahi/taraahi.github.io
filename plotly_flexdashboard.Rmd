@@ -9,10 +9,60 @@ output:
 
 This page is about making some plotly examples.
 
-```{r setup}
+```{r setup, message=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 
 library(plotly)
 ```
+
+
+NYC Airbnb data
+
+
+* The mutate line is saying that a 10 rating should be 5 stars
+* Keeping the variables we care about 
+* We only want a subset of what we're interested in, it's a big data set to run in the background so we filter
+
+```{r}
+data(nyc_airbnb)
+
+nyc_airbnb = 
+  nyc_airbnb %>% 
+  mutate(rating = review_scores_location / 2) %>%
+  select(
+    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
+  filter(
+    !is.na(rating), 
+    neighbourhood_group == "Manhattan",
+    room_type == "Entire home/apt",
+    price %in% 100:500) %>% 
+  drop_na(rating)
+```
+
+
+Plotly scatterplot:
+
+* The \ puts this on a new line
+
+```{r}
+nyc_airbnb %>%
+  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
+  plot_ly(
+    x = ~lat, y = ~long, type = "scatter", mode = "markers",
+    color = ~price, text = ~text_label, alpha = 0.5)
+```
+
+Plotly boxplot:
+
+* Mutate to put things in order with factor reorder, neighborhood in order of price
+
+```{r}
+nyc_airbnb %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+  plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+```
+
+
+
 
