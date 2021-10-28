@@ -1,0 +1,18 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+This page is about making some plotly examples.
+
+```{r setup}
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
