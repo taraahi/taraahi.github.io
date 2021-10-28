@@ -2,6 +2,7 @@
 title: "My awesome website"
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true
 ---
@@ -37,6 +38,10 @@ Let's link to useful tools for data science:
 
 Here's the cute pic that happened to be on my desktop:
 
+<img src="images/subway.jpeg" style="width=75%">
+
+^This way we can style things.
+
 ![](images/subway.jpeg)
 
 ## Link to page within the site
@@ -47,7 +52,15 @@ Adding a _site.yml text file has given me a navigation bar, can take out the par
 
 
 
+## Quarterly Results {.tabset}
 
+### By Product
+
+(tab content)
+
+### By Region
+
+(tab content)
 
 
 
