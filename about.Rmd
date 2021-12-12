@@ -7,6 +7,59 @@ output:
 ---
 
 
-# This page has info about me.
+# A little bit about me and my experience...
 
-I'm a student in P8105.
+
+## Professional Experience
+
+
+### Education
+
+**Columbia University Mailman School of Public Health** 2020 - 2022
+
+_MPH in Epidemiology and Outcomes Research_
+
+**University of California, Santa Barbara** 2012 - 2016
+
+_BS in Biopsychology with a minor in Anthropology_
+
+### Professional Experience
+
+**Pfizer** Jun 2021 - Aug 2021
+_Health Economics and Outcomes Research Graduate Student Associate_
+
+**Genentech, _a member of the Roche group_** 2018 - 2020
+_Associate Alliance & Partnerships Lead_ 2019 - 2020
+_Partnership Manager_ 2018 - 2019
+
+**University of California, San Francisco** 2016 - 2018
+_Clinical Research Coordinator_ 2017 - 2018
+_Assistant Clinical Research Coordinator_ 2016 - 2017
+
+
+**Santa Barbara County Public Health Department** 2015 - 2016
+_Epideiology and Emergency Preparedness Intern_
+
+
+### Service and Leadership
+* COVID-19 Student Service Corps 2021 - present
+
+* Gene Academy 2018 - 2020
+
+* Physicians Organizing Committee 2017 - 2018
+
+* The Bottom Line, _UCSB's Independent Student Newspaper_ 2014 - 2016
+
+
+### Publications 
+
+Patel, S.G., Duloy, A., Kaltenbach, T., Hall, M., Kahi, C., Pohl, H., Rastogi, A., Hammad, H., Soetikno, R., Shergill, A., Simon, V., Nguyen, T., Ezekwe, E., **Ahi, T.**, Keswani, R.N., Wani, S. (2019) “Development and validation of a video-based cold snare polypectomy assessment tool (with videos).” Gastrointest Endosc. 89(6): 1222-1230.e2.
+
+
+Krishnamurthi, N., Schopfer, D. W., **Ahi, T.**, Bettencourt, M., Piros, K., Ringer, R., Shen, H., Kehler, J.P., Whooley, M.A. (2018) “Predictors of Patient Participation and Completion of Home-Based Cardiac Rehabilitation in the Veteran’s Health Administration for Patients with Coronary Heart Disease.” Am J Cardiol. 123(1): 19-24. 
+
+
+### Technical and Language Skills
+**Software:** SAS, R, STATA, REDCap, iRIS, Adobe InDesign, Mathematica, Microsoft Suite (Advanced)
+
+**Languages:** French (Fluent), Farsi (Fluent)
